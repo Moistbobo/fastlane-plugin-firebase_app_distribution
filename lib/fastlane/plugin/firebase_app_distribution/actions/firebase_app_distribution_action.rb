@@ -79,7 +79,7 @@ module Fastlane
       def self.app_id_from_params(params)
         if params[:app]
           app_id = params[:app]
-        elsif xcode_archive_path
+        elsif params[:googleservice_info_plist_path]
           plist_path = params[:googleservice_info_plist_path]
           app_id = get_ios_app_id_from_archive_plist(xcode_archive_path, plist_path)
         end

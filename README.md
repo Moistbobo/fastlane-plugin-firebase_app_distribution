@@ -6,10 +6,14 @@
 
 Firebase App Distribution makes distributing your apps to trusted testers painless. By getting your apps onto testers' devices quickly, you can get feedback early and often. To learn more about Firebase App Distribution, go [here](https://firebase.google.com/docs/app-distribution).
 
+## Forked version
+This fork adds functionality to allow custom googleservice-info paths outside the Product folder, while preserving the original functionality.
+
+Due note that this was made according to my own project requirements, and as such the implementation is quite hacky and not tested.
 
 ## Getting Started
- - [iOS](https://firebase.google.com/docs/app-distribution/ios/distribute-fastlane)
- - [Android](https://firebase.google.com/docs/app-distribution/android/distribute-fastlane)
+- [iOS](https://firebase.google.com/docs/app-distribution/ios/distribute-fastlane)
+- [Android](https://firebase.google.com/docs/app-distribution/android/distribute-fastlane)
 
 ## Run tests for this plugin
 
