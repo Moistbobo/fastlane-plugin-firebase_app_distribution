@@ -44,7 +44,7 @@ module Fastlane
           UI.shell_error!("can't extract application path from Info.plist at #{archive_path}") if app_path.empty?
           identifier = parse_plist("#{archive_path}/Products/#{app_path}/#{plist_path}")["GOOGLE_APP_ID"]
           UI.shell_error!("can't extract GOOGLE_APP_ID") if identifier.empty?
-        else
+        elsif(archive_path.empty?)
           identifier = parse_plist("./ios/#{plist_path}")
           UI.shell_error!("Attempted to read plist at ./ios, can't extract GOOGLE_APP_ID") if identifier.empty?
         end
